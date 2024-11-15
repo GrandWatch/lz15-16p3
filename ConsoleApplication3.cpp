@@ -4,6 +4,8 @@
 #include <iostream>
 #include <fstream>   // для роботи з файлами
 #include <string>
+#include <Windows.h> 
+
 using namespace std;
 
 // Оголошення структури абітурієнта
@@ -17,6 +19,9 @@ struct Abiturient {
 };
 
 int main() {
+    
+SetConsoleCP(1251);
+SetConsoleOutputCP(1251);
     // Ініціалізація списку абітурієнтів
     Abiturient abitur[] = {
         {"Фурман", "Олена", "Середня освіта математика", 145, 170, 160},
